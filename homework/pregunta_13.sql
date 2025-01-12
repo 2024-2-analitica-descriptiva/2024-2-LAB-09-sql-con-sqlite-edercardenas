@@ -45,7 +45,7 @@
 --  
 SELECT 
     K0,
-    AVG(c12) AS "avg(c12)"
+    round(AVG(c12) + 0.000001, 2) AS "avg(c12)"
 FROM
     tbl1
 WHERE
